@@ -1,0 +1,9 @@
+# Ignore private keys
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
