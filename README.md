@@ -22,16 +22,16 @@ This project is a personal portfolio website hosted on AWS EC2.
 - Security Group configured to allow HTTP (80) and SSH (22)
 
 Flow:
-User Browser → EC2 Public IP → nginx → index.html
+User Browser → HTTP Request → AWS EC2 (nginx) → index.html Response
 
 ## 📊 AWS Evidence
-- EC2 instance created and managed via AWS Console
-- SSH access established using .pem key pair
-- Security groups configured manually
-- Public IP assigned to instance
+- EC2 instance launched and managed via AWS Console (:contentReference[oaicite:0]{index=0})
+- Secure SSH access configured using key-pair authentication (.pem file)
+- Security Groups configured to allow inbound HTTP (80) and SSH (22)
+- Public IPv4 address assigned to EC2 instance for web access
   
 ## 🌐 Live Website
 http://13.223.50.206
 
 ## 📌 About Me
-I am a Computer Engineering graduate with networking (Cisco) background, currently learning cloud computing and building real-world projects.
+I am a Computer Engineering graduate with a strong foundation in networking (Cisco) and IT infrastructure. I am currently transitioning into cloud computing and actively building hands-on projects using AWS, Linux, and web server technologies.
