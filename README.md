@@ -15,7 +15,7 @@ This project is a personal portfolio website hosted on AWS EC2.
 - HTML/CSS
 
 ## 🌐 Live Website
-http://your-public-ip
+http://13.223.50.206
 
 ## 📌 About Me
 I am a Computer Engineering graduate with networking (Cisco) background, currently learning cloud computing and building real-world projects.
