@@ -29,7 +29,16 @@ User Browser → HTTP Request → AWS EC2 (nginx) → index.html Response
 - Secure SSH access configured using key-pair authentication (.pem file)
 - Security Groups configured to allow inbound HTTP (80) and SSH (22)
 - Public IPv4 address assigned to EC2 instance for web access
-  
+
+## 🔐 IAM Learning Notes
+- Learned IAM user vs root user access differences
+- Understood region-based resource visibility in AWS
+- Configured IAM group with EC2 permissions
+
+  ## 🧩 Issues Faced
+- EC2 instance not visible due to AWS region mismatch between root and IAM user
+- Resolved by aligning both sessions to the same region (ap-south-1)
+
 ## 🌐 Live Website
 http://13.223.50.206
 
