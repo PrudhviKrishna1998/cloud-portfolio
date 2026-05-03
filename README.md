@@ -39,6 +39,11 @@ User Browser → HTTP Request → AWS EC2 (nginx) → index.html Response
 - EC2 instance not visible due to AWS region mismatch between root and IAM user
 - Resolved by aligning both sessions to the same region (ap-south-1)
 
+  ## 🔐 Private Subnet Setup
+- Created a private subnet with no internet access
+- Launched EC2 without public IP
+- Accessed private EC2 securely via public EC2 (bastion host)
+
 ## 🌐 Live Website
 http://13.223.50.206
 
