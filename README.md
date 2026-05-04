@@ -7,8 +7,7 @@ This project is a personal portfolio website hosted on AWS EC2.
 - Configured secure SSH access using key pairs
 - Hosted using nginx web server
 - Custom HTML/CSS resume website
-- ![EC2](screenshots/ec2-instance.png)
-
+  
 ## 🛠️ Technologies Used
 - AWS EC2
 - Linux (Ubuntu)
@@ -44,6 +43,7 @@ User Browser → HTTP Request → AWS EC2 (nginx) → index.html Response
 - Created a private subnet with no internet access
 - Launched EC2 without public IP
 - Accessed private EC2 securely via public EC2 (bastion host)
+- ![](screenshots/ssh-public-to-private.png)  ![](screenshots/ec2-2-instances.png) ![](screenshots/vpc-subnets-overview.png) 
 
 ## 🌐 Live Website
 http://13.223.50.206
