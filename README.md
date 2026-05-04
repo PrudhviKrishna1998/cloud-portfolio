@@ -7,6 +7,7 @@ This project is a personal portfolio website hosted on AWS EC2.
 - Configured secure SSH access using key pairs
 - Hosted using nginx web server
 - Custom HTML/CSS resume website
+- ![EC2](screenshots/ec2-instances-overview.png)
 
 ## 🛠️ Technologies Used
 - AWS EC2
