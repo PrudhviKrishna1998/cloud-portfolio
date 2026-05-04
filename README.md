@@ -35,15 +35,19 @@ User Browser → HTTP Request → AWS EC2 (nginx) → index.html Response
 - Understood region-based resource visibility in AWS
 - Configured IAM group with EC2 permissions
 
-  ## 🧩 Issues Faced
+## 🧩 Issues Faced
 - EC2 instance not visible due to AWS region mismatch between root and IAM user
 - Resolved by aligning both sessions to the same region (ap-south-1)
 
-  ## 🔐 Private Subnet Setup
+## 🔐 Private Subnet Setup
 - Created a private subnet with no internet access
 - Launched EC2 without public IP
 - Accessed private EC2 securely via public EC2 (bastion host)
-- ![](screenshots/ssh-public-to-private.png)  ![](screenshots/ec2-2-instances.png) ![](screenshots/vpc-subnets-overview.png) 
+- ![](screenshots/ssh-public-to-private.png)  ![](screenshots/ec2-2-instances.png) ![](screenshots/vpc-subnets-overview.png)
+
+## 🔬 Networking Validation
+Tested secure architecture by restricting direct SSH access to private EC2 and enabling access only via a public EC2 (bastion host).  
+Verified internet isolation by confirming public EC2 has connectivity while private EC2 has no direct internet access.
 
 ## 🌐 Live Website
 http://13.223.50.206
