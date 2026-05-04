@@ -49,6 +49,14 @@ User Browser → HTTP Request → AWS EC2 (nginx) → index.html Response
 Tested secure architecture by restricting direct SSH access to private EC2 and enabling access only via a public EC2 (bastion host).  
 Verified internet isolation by confirming public EC2 has connectivity while private EC2 has no direct internet access.
 
+## 🌐 NAT Gateway (Conceptual Understanding)
+Learned how private EC2 instances can securely access the internet using a NAT Gateway without being exposed to inbound traffic.
+- NAT Gateway is deployed in a public subnet with an Elastic IP
+- Private subnet routes outbound traffic (0.0.0.0/0) to the NAT Gateway
+- Enables outbound internet access while maintaining network isolation
+
+Note: This was studied conceptually and not implemented to avoid additional AWS costs.
+
 ## 🌐 Live Website
 http://13.223.50.206
 
