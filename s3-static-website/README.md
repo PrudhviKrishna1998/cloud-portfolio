@@ -8,4 +8,4 @@ This project demonstrates hosting a static website using Amazon S3.
 - Enabled static website hosting
 
 ### 🌍 Live Website
-http://your-bucket-name.s3-website-your-region.amazonaws.com
+https://prudhvi-portfolio-s3.s3.us-east-1.amazonaws.com/index.html
