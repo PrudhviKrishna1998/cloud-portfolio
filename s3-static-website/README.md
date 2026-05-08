@@ -19,5 +19,11 @@ This project demonstrates hosting a static website using Amazon S3.
 * Verified access by running AWS CLI commands from EC2 and successfully listing S3 buckets
 * Demonstrated secure service-to-service authentication using IAM roles
 
+## 📊 CloudWatch Monitoring
+- Monitored EC2 instance metrics using Amazon CloudWatch
+- Created CPU utilization alarms with SNS email notifications
+- Simulated high CPU usage on EC2 to test monitoring and alert functionality
+- Demonstrated real-time infrastructure monitoring and automated alerting
+
 ### 🌍 Live Website
 https://prudhvi-portfolio-s3.s3.us-east-1.amazonaws.com/index.html
