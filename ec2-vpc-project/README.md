@@ -61,6 +61,12 @@ Learned how private EC2 instances can securely access the internet using a NAT G
 - Installed Apache web servers and validated load balancing between servers  
 - Demonstrated high availability concepts using AWS Load Balancer
 
+## 📈 Auto Scaling Group (ASG)
+- Created an Auto Scaling Group to automatically launch and terminate EC2 instances based on demand  
+- Configured a Launch Template using a custom AMI for automated instance creation  
+- Integrated Auto Scaling with Application Load Balancer target group  
+- Tested dynamic scaling by increasing CPU utilization and verified automatic EC2 scaling
+
 Note: This was studied conceptually and not implemented to avoid additional AWS costs.
 
 ## 🌐 Live Website
