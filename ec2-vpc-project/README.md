@@ -55,6 +55,12 @@ Learned how private EC2 instances can securely access the internet using a NAT G
 - Private subnet routes outbound traffic (0.0.0.0/0) to the NAT Gateway
 - Enables outbound internet access while maintaining network isolation
 
+## ⚖️ Application Load Balancer (ALB)
+- Configured an Application Load Balancer to distribute traffic across multiple EC2 instances  
+- Created a target group and registered EC2 instances for traffic routing  
+- Installed Apache web servers and validated load balancing between servers  
+- Demonstrated high availability concepts using AWS Load Balancer
+
 Note: This was studied conceptually and not implemented to avoid additional AWS costs.
 
 ## 🌐 Live Website
