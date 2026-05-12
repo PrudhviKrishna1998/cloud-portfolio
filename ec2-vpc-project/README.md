@@ -67,6 +67,12 @@ Learned how private EC2 instances can securely access the internet using a NAT G
 - Integrated Auto Scaling with Application Load Balancer target group  
 - Tested dynamic scaling by increasing CPU utilization and verified automatic EC2 scaling
 
+## 🗄️ RDS (Relational Database Service)
+- Created a MySQL RDS database using AWS RDS Free Tier  
+- Configured secure connectivity between EC2 and RDS using Security Groups  
+- Connected to private RDS instance from EC2 using MySQL client  
+- Executed SQL operations including database selection, table creation, data insertion, and querying
+
 Note: This was studied conceptually and not implemented to avoid additional AWS costs.
 
 ## 🌐 Live Website
