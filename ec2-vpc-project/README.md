@@ -73,6 +73,12 @@ Learned how private EC2 instances can securely access the internet using a NAT G
 - Connected to private RDS instance from EC2 using MySQL client  
 - Executed SQL operations including database selection, table creation, data insertion, and querying
 
+## 🌍 Route 53 (DNS)
+- Created a Route 53 Hosted Zone for domain management and DNS simulation  
+- Configured an A Record to route traffic to an EC2 public IP address  
+- Learned DNS concepts including domain name resolution and hosted zones  
+- Understood Route 53 record types such as A Record and Alias Record
+
 Note: This was studied conceptually and not implemented to avoid additional AWS costs.
 
 ## 🌐 Live Website
