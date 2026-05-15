@@ -1,4 +1,4 @@
-# Cloud Portfolio Website
+**# AWS EC2 Networking & Database Project **
 
 This project is a personal portfolio website hosted on AWS EC2.
 
@@ -30,10 +30,17 @@ User Browser → HTTP Request → AWS EC2 (nginx) → index.html Response
 - Security Groups configured to allow inbound HTTP (80) and SSH (22)
 - Public IPv4 address assigned to EC2 instance for web access
 
-## 🔐 IAM Learning Notes
-- Learned IAM user vs root user access differences
-- Understood region-based resource visibility in AWS
-- Configured IAM group with EC2 permissions
+## 🔐 IAM Access Control
+* Created IAM users with different permission levels (admin-user and s3-user)
+* Assigned full access to admin-user and limited read-only access to s3-user
+* Verified access by successfully using S3 and receiving “Access Denied” for restricted EC2 actions
+* Demonstrated principle of least privilege and IAM policy enforcement
+
+## 🔐 IAM Roles
+* Created an IAM role to allow EC2 to securely access S3 without using access keys
+* Attached the role with S3 read-only permissions to the EC2 instance
+* Verified access by running AWS CLI commands from EC2 and successfully listing S3 buckets
+* Demonstrated secure service-to-service authentication using IAM roles
 
 ## 🧩 Issues Faced
 - EC2 instance not visible due to AWS region mismatch between root and IAM user
@@ -43,7 +50,6 @@ User Browser → HTTP Request → AWS EC2 (nginx) → index.html Response
 - Created a private subnet with no internet access
 - Launched EC2 without public IP
 - Accessed private EC2 securely via public EC2 (bastion host)
-- ![](screenshots/ssh-public-to-private.png)  ![](screenshots/ec2-2-instances.png) ![](screenshots/vpc-subnets-overview.png)
 
 ## 🔬 Networking Validation
 Tested secure architecture by restricting direct SSH access to private EC2 and enabling access only via a public EC2 (bastion host).  
@@ -55,31 +61,11 @@ Learned how private EC2 instances can securely access the internet using a NAT G
 - Private subnet routes outbound traffic (0.0.0.0/0) to the NAT Gateway
 - Enables outbound internet access while maintaining network isolation
 
-## ⚖️ Application Load Balancer (ALB)
-- Configured an Application Load Balancer to distribute traffic across multiple EC2 instances  
-- Created a target group and registered EC2 instances for traffic routing  
-- Installed Apache web servers and validated load balancing between servers  
-- Demonstrated high availability concepts using AWS Load Balancer
-
-## 📈 Auto Scaling Group (ASG)
-- Created an Auto Scaling Group to automatically launch and terminate EC2 instances based on demand  
-- Configured a Launch Template using a custom AMI for automated instance creation  
-- Integrated Auto Scaling with Application Load Balancer target group  
-- Tested dynamic scaling by increasing CPU utilization and verified automatic EC2 scaling
-
 ## 🗄️ RDS (Relational Database Service)
 - Created a MySQL RDS database using AWS RDS Free Tier  
 - Configured secure connectivity between EC2 and RDS using Security Groups  
-- Connected to private RDS instance from EC2 using MySQL client  
+- Established secure EC2-to-RDS connectivity using MySQL client and Security Groups
 - Executed SQL operations including database selection, table creation, data insertion, and querying
-
-## 🌍 Route 53 (DNS)
-- Created a Route 53 Hosted Zone for domain management and DNS simulation  
-- Configured an A Record to route traffic to an EC2 public IP address  
-- Learned DNS concepts including domain name resolution and hosted zones  
-- Understood Route 53 record types such as A Record and Alias Record
-
-Note: This was studied conceptually and not implemented to avoid additional AWS costs.
 
 ## 🌐 Live Website
 http://13.223.50.206
